@@ -1,8 +1,7 @@
 import './index.css';
-import './style.scss';
+import html from "./index.html"
+
 
 console.log('hello from webpack!');
 
-const fancyFunc = () => [1, 2];
-
-const [a, b] = fancyFunc();
+console.log(123)

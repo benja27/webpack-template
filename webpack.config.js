@@ -5,14 +5,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        test: /\.css/i,
+        use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.js$/,
-        exclude: /mode_modules/,
-        use: ['babel-loader'],
-      },
+        test : /\.html/i,
+        loader : "html-loader"
+      }      
     ],
   },
   plugins: [
